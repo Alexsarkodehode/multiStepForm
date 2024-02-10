@@ -1,4 +1,22 @@
-#push-button{
-background-color: brown;
-color: white;
+
+.multistep{
+   text-align: center;
+   margin-right: 10%;
+   margin-left: 10%;
+   margin-top: 10%;
+   margin-bottom: 10%;
+}
+
+button, h1{
+    justify-items: center;
+    color: azure;
+}
+aside {
+    padding: 50px;
+    margin: 50px;
+    float: left;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #29627e;
+    background-color: blue;
 }
