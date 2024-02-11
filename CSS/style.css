@@ -7,11 +7,13 @@
    margin-bottom: 10%;
 }
 
-button, h1{
+button, h1
+{
     justify-items: center;
     color: azure;
 }
 aside {
+    background-image: url("");
     padding: 50px;
     margin: 50px;
     float: left;
