@@ -13,7 +13,7 @@ button, h1
     color: azure;
 }
 aside {
-    background-image: url("");
+    background-image: url("../images/bg-sidebar-desktop.svg");
     padding: 50px;
     margin: 50px;
     float: left;
