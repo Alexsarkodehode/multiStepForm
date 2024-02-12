@@ -1,8 +1,13 @@
 
-.multistep{
+@font-face{
+    font-family: titleFont;
+    src:url("../fonts/Ubuntu-Bold.ttf")
+}
+
+.wrapper{
    text-align: center;
-   margin-right: 10%;
-   margin-left: 10%;
+   margin-right: 20%;
+   margin-left: 20%;
    margin-top: 10%;
    margin-bottom: 10%;
 }
@@ -14,11 +19,45 @@ button, h1
 }
 aside {
     background-image: url("../images/bg-sidebar-desktop.svg");
-    padding: 50px;
-    margin: 50px;
+    padding: 2rem;
+    margin: 2rem;
     float: left;
     box-shadow: inset 5px 0 5px -5px #29627e;
     font-style: italic;
     color: #29627e;
     background-color: blue;
+}
+
+form {
+padding-top: 1%;
+}
+
+.personalinfo{
+    font-family: titlefont;
+}
+
+#nextButton{
+    margin-top: 12%;
+    margin-left: 15%;
+
+}
+
+#backButton{
+    margin-top: 12%;
+    margin-right: 15%;
+    
+}
+
+.card-container {
+	align-items: start;
+	display: grid;
+	grid-gap: 16px;
+	grid-template-columns: repeat(auto-fit, 300px);
+	justify-content: center;
+}
+
+card1, card2, card3 {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
