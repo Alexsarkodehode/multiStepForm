@@ -22,10 +22,10 @@
 }
 
 #section-aside{
-    margin-right: 10rem;
+    margin-right: 20rem;
 }
 #section-forms{
-    margin-left: 10rem;
+    margin-left: 20rem;
 }
 
 #aside {
@@ -37,11 +37,11 @@
     padding-top: 2.5rem;
     padding: 4rem;
     box-shadow: inset 5px 0 5px -5px #29627e;
-    font-style: italic;
-    color: #29627e;
-    background-color: blue;
+    color: #fff;
     border: 1px;
     border-radius: 5%;
+    font-family: bodyFont;
+    font-
 }
 
 #step-button{
@@ -49,7 +49,6 @@ width:20px;
 height:20px;
 border-radius: 50%;
 border: solid 1px #ccc;
-
 }
 
 form {
