@@ -8,40 +8,44 @@
     <title>Multi step form</title>
 </head>
 <body>
-    <section>
     <div class="wrapper">
-    <aside class="aside">
-        <p>
-            <button></button>
-            step 1
-            <h1>YOUR INFO</h1>
-        </p>
-        <p>
-            <button></button>
-            step 2
-            <h1>SELECT PLAN</h1>
-        </p>
-        <p>
-            <button></button>
-            step 3
-            <h1>ADD-ONS</h1>
-        </p>
-        <p>
-            <button></button>
-            step 4
-            <h1>SUMMARY</h1>
-        </p>
+        <section id="section-aside">
+    <aside id="aside">
+            <button id="step-button">1</button>
+            <span id="steps">Step 1</span>
+            <span>YOUR INFO</span>
+        
+            <button id="step-button">2</button>
+            <span id="steps">Step 2</span>
+            <span>SELECT PLAN</span>
+    
+            <button id="step-button">3</button>
+            <span id="steps">Step 3</span>
+            <span>ADD-ONS</span>
+    
+            <button id="step-button">4</button>
+            <span id="steps">Step 4</span>
+            <span>SUMMARY</span>
+    
     </aside>
-   
+    </section>
+    <section id="section-forms">
       <form action="">
         <p class="personalinfo">Personal Info</p>
         <p>Please provide your name, email adress and phone number.</p>
 
-      <p>Name</p> <input type="text" placeholder="Name..">
-      <p>Email-adress</p><input type="text" placeholder="Email..">
-      <p>Phone number</p><input type="text" placeholder="Phone..">
+      <div>
+      <p>Name</p>
+      <input type="text" placeholder="Name..">
+      <p>Email-adress</p>
+      <input type="text" placeholder="Email..">
+      <p>Phone Number</p>
+      <input type="text" placeholder="Phone..">
+      </div>
+
     </form>
     
+    <form action="" id="select-plan">
     <div class="select-plan-buttons">
         <p>Select your plan</p>
         <p>You have the option of monthly or yearly billing</p>
@@ -60,14 +64,54 @@
         <p id="button-script">Pro</p>
         <p>$15/mo</p>
        </button>
+       </form>
 
-
+       <form action="pick-add-ons">
+        <div>
+            <p>Pick add-ons</p>
+            <p>Add-ons help enhance your gaming experience.</p>
+        </div>
+        <div id="checkbox-div">
+            <input id="input-checkbox" type="checkbox">
+           <span> Online service</span>
+            <br/>
+           <span>Access to multiplayer game</span> <span id="light-text">+1$/mo</span>
+        </div>
+        <br>
+        <div id="checkbox-div">
+            <input id="input-checkbox" type="checkbox">
+               <span> Larger storage</span>
+                <br/>
+               <span>Extra 1TB of cloud save</span> <span id="light-text">+2$/mo</span>
+            </div>
+            <br>
+            <div id="checkbox-div">
+                <input id="input-checkbox" type="checkbox">
+                   <span>Customizable profile</span>
+                    <br/>
+                   <span">Custom theme on your profile</span> <span id="light-text">+2$/mo</span>
+                </div>
+      
+       </form>
+       <form action="" id="finish-form">
+        <p>Double-check everything looks OK before confirming</p>
+        <div id="sum">
+            <p>Arcade(monthly)
+            </p>
+            <a href="">change</a>
+            <span id="month-payment">$9/mo</span>
+            <hr>
+            <p>Online service</p>
+            <span id="month-payment">+1/mo</span>
+            <br>
+            <p>Larger storage</p>
+            <span id="month-payment">+2/mo</span>
+        </div>
         
+       </form>
+        </section>
+        <button id="backButton">Back</button>
+        <button id="nextButton">Next</button>
     </div>
-    <button id="backButton">Previous</button>
-    <button id="nextButton">Next</button>
-
-    </div>
-    </section>
 </body>
 </html>

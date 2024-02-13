@@ -4,28 +4,52 @@
     src:url("../fonts/Ubuntu-Bold.ttf")
 }
 
-.wrapper{
-   text-align: center;
-   margin-right: 20%;
-   margin-left: 20%;
-   margin-top: 10%;
-   margin-bottom: 10%;
+@font-face {
+    font-family: sideFont;
+    src: url("../fonts/Ubuntu-Medium.ttf");
 }
 
-button, h1
-{
-    justify-items: center;
-    color: azure;
+@font-face{
+    font-family: bodyFont;
+    src:url("../fonts/Ubuntu-Regular.ttf")
 }
-aside {
+
+.wrapper{
+   position: absolute;
+   top: 25%;
+   bottom: 25%;
+   margin-left: 30rem;
+}
+
+#section-aside{
+    margin-right: 10rem;
+}
+#section-forms{
+    margin-left: 10rem;
+}
+
+#aside {
+    display: grid;
+    grid-template-columns: auto;
+    position: absolute;
     background-image: url("../images/bg-sidebar-desktop.svg");
-    padding: 2rem;
-    margin: 2rem;
-    float: left;
+    padding-bottom: 5rem;
+    padding-top: 2.5rem;
+    padding: 4rem;
     box-shadow: inset 5px 0 5px -5px #29627e;
     font-style: italic;
     color: #29627e;
     background-color: blue;
+    border: 1px;
+    border-radius: 5%;
+}
+
+#step-button{
+width:20px;
+height:20px;
+border-radius: 50%;
+border: solid 1px #ccc;
+
 }
 
 form {
@@ -48,5 +72,33 @@ padding-top: 1%;
     
 }
 
+#checkbox-div{
+    display: inline-block;
+    border: 1px solid #ccc;
+    margin: 1%;
+    padding: 1%;
+    border-radius: 5%;
+}
 
+#input-checkbox{
+    display: inline-block;
+}
 
+#light-text{
+    display:inline-block;
+    
+}
+
+input[type="checkbox"]{
+    display: inline-block;
+}
+
+#sum{
+    display: inline-block;
+    background-color: #D3D3D3; 
+    padding: 2rem;
+}
+
+#month-payment{
+    margin-left: 40px;
+}
