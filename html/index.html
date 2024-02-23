@@ -8,45 +8,126 @@
     <title>Multi step form</title>
 </head>
 <body>
-    <div class="wrapper">
-        <section id="section-aside">
-    <aside id="aside">
-            <button id="step-button">1</button>
-            <span id="steps">Step 1</span>
-            <span id="step-text">YOUR INFO</span>
-        
-            <button id="step-button">2</button>
-            <span id="steps">Step 2</span>
-            <span id="step-text">SELECT PLAN</span>
+     <div id="container">
+         
+         <div id="displayStep" class="displayStep">
+
+             <div class="circle">
+                     <div class="circle1" id="circle1"><p>1</p></div>
+                     <div class="circle2" id="circle2"><P>2</P></div>
+                     <div class="circle3" id="circle3"><p>3</p></div>
+                     <div class="circle4" id="circle4"><p>4</p></div>
+             </div>
+
+             <div class="steps" id="steps">
+                 <div class="step1">
+                     <p>step 1</p>
+                     <span>YOUR INFO</span>
+                 </div>
+                 <div class="step2">
+                     <p>Step 2</p>
+                     <span>SELECT PLAN</span>
+                 </div>
+                 <div class="step3">
+                     <p>Step 3</p>
+                     <span>ADD-ONS</span>
+                 </div>
+                 <div class="step4">
+                     <p>step 4</p>
+                     <span>SUMMARY</span>
+                 </div>
+             </div>
+         </div>
+
+    <div class="stepContainer" id="stepContainer">
+             
+        <div class="affischStep">
+                 
+            <div class="stepInfo" id="stepInfo">
+                     
+                <h1>Personal Info</h1>
+                     
+                    <p class="description">
+                         Please provide your name, 
+                         email adress and phone number.
+                     </p>
+                      
+                     <div class="flexError">
+                         <p>Name</p>
+                         <span id="errorName"></span>
+                     </div>  
+                      
+                      <input 
+                      type="text" 
+                      name="name" 
+                      id="infoName"
+                      placeholder="e.g. Stephen King"
+                      >
+
+                      <div class="flexError">
+                        <p>Email adress</p>
+                        <span id="errorName"></span>
+                      </div> 
+
+                      <input 
+                      type="text" 
+                      name="email" 
+                      id="infoEmail"
+                      placeholder="e.g.stephenking@lorem.com"
+                      >
+
+                      
+
+                 </div>
+             </div>
+    </div>
+
     
-            <button id="step-button">3</button>
-            <span id="steps">Step 3</span>
-            <span id="step-text">ADD-ONS</span>
     
-            <button id="step-button">4</button>
-            <span id="steps">Step 4</span>
-            <span id="step-text">SUMMARY</span>
     
-    </aside>
-    </section>
-    <section id="section-forms">
-      <form action="">
-        <p class="personalinfo">Personal Info</p>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <form action="" id="slides-form">
+   
+    
+    <div id="form">
+        <p id="personal-info-p">Personal Info</p>
         <p>Please provide your name, email adress and phone number.</p>
 
       <div>
+        <div>
       <p>Name</p>
-      <input type="text" placeholder="Name..">
-      <p>Email-adress</p>
-      <input type="text" placeholder="Email..">
-      <p>Phone Number</p>
-      <input type="text" placeholder="Phone..">
+      <input type="text" id="username" placeholder="User name..">
+      <button id="submit-btn-username">Submit</button>
+      <div class="error" id="name-error"></div>
       </div>
-
-    </form>
+      <div>
+      <p>Email-adress</p>
+      <input type="text" id="email" placeholder="Email..">
+      <button id="submit-btn-email" >Submit</button>
+      <div class="error" id="email-error"></div>
+      </div>
+      <div>
+      <p>Phone Number</p>
+      <input type="text" id="phone" placeholder="Phone..">
+      <button id="submit-btn-number">Submit</button>
+      <div class="error" id="phone-error"></div>
+      </div>
+      
+      
+      </div>
+      <button id="next-btn active">Next Step</button>
+    </div>
     
-    <form action="" id="select-plan">
-    <div class="select-plan-buttons">
+    
+    <div id="form">
         <p>Select your plan</p>
         <p>You have the option of monthly or yearly billing</p>
        <button>
@@ -64,36 +145,52 @@
         <p id="button-script">Pro</p>
         <p>$15/mo</p>
        </button>
-       </form>
+       <div>
+        <button id="back-btn active">Go back</button>
+        <button id="next-btn active" >Next step</button>
+       </div>
+    </div>
 
-       <form action="pick-add-ons">
+
+
+    
+       <div id="form">
         <div>
             <p>Pick add-ons</p>
             <p>Add-ons help enhance your gaming experience.</p>
         </div>
+        <fieldset>
         <div id="checkbox-div">
             <input id="input-checkbox" type="checkbox">
            <span> Online service</span>
-            <br/>
            <span>Access to multiplayer game</span> <span id="light-text">+1$/mo</span>
         </div>
+        </fieldset>
         <br>
+        <fieldset>
         <div id="checkbox-div">
             <input id="input-checkbox" type="checkbox">
                <span> Larger storage</span>
-                <br/>
                <span>Extra 1TB of cloud save</span> <span id="light-text">+2$/mo</span>
             </div>
+            </fieldset>
             <br>
+            <fieldset>
             <div id="checkbox-div">
                 <input id="input-checkbox" type="checkbox">
                    <span>Customizable profile</span>
-                    <br/>
                    <span">Custom theme on your profile</span> <span id="light-text">+2$/mo</span>
                 </div>
-      
-       </form>
-       <form action="" id="finish-form">
+                </fieldset>
+                <br>
+                <button id="back-btn active" >Go Back</button>
+                <button id="next-btn active" >Next Step</button>
+            </div>
+       
+
+
+
+            <div id="form">
         <p>Double-check everything looks OK before confirming</p>
         <div id="sum">
             <p>Arcade(monthly)
@@ -106,13 +203,23 @@
             <br>
             <p>Larger storage</p>
             <span id="month-payment">+2/mo</span>
+           
         </div>
-        
-       </form>
-        </section>
-        <button id="backButton">Go Back</button>
-        <button id="nextButton">Next</button>
-        <button id="confirmButton">Confirm</button>
+        <div>
+            <button id="back-btn" >Go back</button>
+        <button id="confirm-btn">confirm</button>
+    </div>
+        </div>
+
+    <div id="form">
+        <img src="../images/icon-thank-you.svg" alt="">
+        <p>Thank you</p>
+        <p>Thank for confirming you subscription. We hope you have fun using our plattform.
+            If you ever need support please feel free to email us at support@loremgaming.com
+        </p>
+    </div>
+
+    </form>
     </div>
 </body>
 </html>

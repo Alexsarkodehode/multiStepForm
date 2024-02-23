@@ -1,4 +1,9 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
 @font-face{
     font-family: titleFont;
     src:url("../fonts/Ubuntu-Bold.ttf")
@@ -14,18 +19,55 @@
     src:url("../fonts/Ubuntu-Regular.ttf")
 }
 
-.wrapper{
-   position: absolute;
-   top: 25%;
-   bottom: 25%;
-   margin-left: 30rem;
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: -webkit-linear-gradient(#fff)
+    
 }
 
-#section-aside{
-    margin-right: 20rem;
+#wrapper{
+    width: 600px;
+    padding-bottom: 20rem;
+    padding-left: 5rem;
+    padding-right: 10rem;
+    text-align: center;
+     overflow: hidden; 
 }
-#section-forms{
-    margin-left: 20rem;
+
+#wrapper #slides-form{
+width: 400%;
+}
+
+#slides-form {
+    display: flex;
+    padding-left: 15rem; 
+    
+}
+
+#slides-form #form-one{
+width: 50%;
+}
+#slides-form #form-two{
+    width: 100%;
+    transition: margin-left 0.5s ease-in;
+}
+
+#slides-form #form-three{
+    width: 100%;
+    transition: margin-left 0.5s ease-in;
+}
+
+#slides-form #form-four{
+    width: 100%;
+    transition: margin-left 0.5s ease-in;
+}
+
+#slides-form #form-five{
+    width: 100%;
+    transition: margin-left 0.5s ease-in;
 }
 
 #aside {
@@ -33,43 +75,61 @@
     grid-template-columns: auto;
     position: absolute;
     background-image: url("../images/bg-sidebar-desktop.svg");
-    padding-bottom: 5rem;
-    padding-top: 2.5rem;
-    padding: 4rem;
+    padding: 8rem 5rem 8rem 4rem;
+    margin-right: 10rem;
     box-shadow: inset 5px 0 5px -5px #29627e;
     color: #fff;
     border: 1px;
     border-radius: 5%;
     font-family: bodyFont;
-    font-
 }
 
-#step-button{
+
+#step-btn-one{
 width:20px;
 height:20px;
 border-radius: 50%;
 border: solid 1px #ccc;
 }
 
-form {
-padding-top: 1%;
+
+#step-btn-two{
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    border: solid 1px #ccc;
+    }
+
+    
+#step-btn-three{
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    border: solid 1px #ccc;
+    }
+
+    
+#step-btn-four{
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    border: solid 1px #ccc;
+    }
+
+
+#steps{
+    font-family: bodyFont; 
 }
 
-.personalinfo{
+#step-text{
+    font-family: sideFont;
+}
+
+
+#personal-info-p{
     font-family: titlefont;
 }
 
-#nextButton{
-    margin-top: 12%;
-    margin-left: 15%;
-
-}
-
-#backButton{
-    margin-top: 12%;
-    margin-right: 15%;
-    
-}
 
 #checkbox-div{
     display: inline-block;
@@ -100,4 +160,22 @@ input[type="checkbox"]{
 
 #month-payment{
     margin-left: 40px;
+}
+
+
+#next-step-btn{
+    margin-top: 12%;
+    margin-left: 5%;
+
+}
+
+#back-btn{
+    margin-top: 12%;
+    margin-right: 5%;
+    
+}
+
+#confirm-button{
+    margin-top: 12%;
+    margin-right: 10%;
 }
