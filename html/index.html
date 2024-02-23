@@ -98,13 +98,41 @@
                  <!-----select plan--->
 
                  <div class="stepPlan" id="Steplan">
+                    
                     <h1>Select your plan</h1>
                     <p class="description">
                         You have the option of monthly or yearly billing
                     </p>
                  
 
-                 <div></div>
+                 <div class="selectMonth" id="selectMonth">
+                    
+                    <button 
+                    class="planButton"
+                    id="moisArcade" onclick="getPlanPrice1()">
+                    <img src="../images/icon-arcade.svg" alt="">
+                    <p>Arcade</p>
+                    <span class="priceMonth" id="priceMonth" >$9/mo</span>
+                    </button>
+
+                    <button 
+                    class="planButton"
+                    id="moisArcade" onclick="getPlanPrice2()">
+                    <img src="../images/icon-advanced.svg" alt="">
+                    <p>Advanced</p>
+                    <span class="priceMonth" id="priceMonth" >$12/mo</span>
+                    </button>
+
+                    <button 
+                    class="planButton"
+                    id="moisArcade" onclick="getPlanPrice3()">
+                    <img src="../images/icon-pro.svg" alt="">
+                    <p>Pro</p>
+                    <span class="priceMonth" id="priceMonth" >$15/mo</span>
+                    </button>
+
+                    <div class="advanc"><button></button></div>
+                 </div>
 
                  </div>
 
