@@ -20,7 +20,8 @@
              </div>
 
              <div class="steps" id="steps">
-                 <div class="step1">
+                 
+                <div class="step1">
                      <p>step 1</p>
                      <span>YOUR INFO</span>
                  </div>
@@ -36,6 +37,7 @@
                      <p>step 4</p>
                      <span>SUMMARY</span>
                  </div>
+                 
              </div>
          </div>
 
@@ -111,27 +113,63 @@
                     class="planButton"
                     id="moisArcade" onclick="getPlanPrice1()">
                     <img src="../images/icon-arcade.svg" alt="">
+                    
                     <p>Arcade</p>
                     <span class="priceMonth" id="priceMonth" >$9/mo</span>
                     </button>
 
                     <button 
                     class="planButton"
-                    id="moisArcade" onclick="getPlanPrice2()">
+                    id="moisAdvanced" onclick="getPlanPrice2()">
                     <img src="../images/icon-advanced.svg" alt="">
+                    
                     <p>Advanced</p>
                     <span class="priceMonth" id="priceMonth" >$12/mo</span>
                     </button>
 
                     <button 
                     class="planButton"
-                    id="moisArcade" onclick="getPlanPrice3()">
+                    id="moisAdvanced" onclick="getPlanPrice3()">
                     <img src="../images/icon-pro.svg" alt="">
+                    
                     <p>Pro</p>
                     <span class="priceMonth" id="priceMonth" >$15/mo</span>
                     </button>
 
-                    <div class="advanc"><button></button></div>
+                 </div>
+
+                 <div class="planMonth" id="planYear" >
+
+                    <button class="planButton" id="anneeArcade" 
+                    onclick="getPrice4()">
+                        
+                        <img src="../images/icon-arcade.svg" alt="">
+                        <p>Arcade</p>
+                        <span class="planYear">$90/yr</span>
+                        <label class="free">2 months free</label>
+
+                    </button>
+
+                    <button class="planButton" id="anneeAdvanced" 
+                    onclick="getPrice5()">
+                        
+                        <img src="../images/icon-advanced.svg" alt="">
+                        <p>Advanced</p>
+                        <span class="planYear">$120/yr</span>
+                        <label class="free">2 months free</label>
+
+                    </button>
+
+                    <button class="planButton" id="anneePro" 
+                    onclick="getPrice6()">
+                        
+                        <img src="../images/icon-pro.svg" alt="">
+                        <p>Pro</p>
+                        <span class="planYear">$150/year</span>
+                        <label class="free">2 months free</label>
+
+                    </button>
+
                  </div>
 
                  </div>
