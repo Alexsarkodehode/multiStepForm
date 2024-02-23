@@ -39,15 +39,15 @@
              </div>
          </div>
 
-    <div class="stepContainer" id="stepContainer">
+         <div class="stepContainer" id="stepContainer">
              
-        <div class="affischStep">
+             <div class="affischStep">
                  
-            <div class="stepInfo" id="stepInfo">
+                 <div class="stepInfo" id="stepInfo">
                      
-                <h1>Personal Info</h1>
+                     <h1>Personal Info</h1>
                      
-                    <p class="description">
+                      <p class="description">
                          Please provide your name, 
                          email adress and phone number.
                      </p>
@@ -76,150 +76,22 @@
                       placeholder="e.g.stephenking@lorem.com"
                       >
 
-                      
+                      <div class="flexError">
+                        <p>Phone Number</p>
+                        <span id="errorName"></span>
+                      </div>
+
+                      <input 
+                      type="text"
+                      name="phone"
+                      placeholder="e.g. +1234567890">
 
                  </div>
+
              </div>
-    </div>
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <form action="" id="slides-form">
-   
-    
-    <div id="form">
-        <p id="personal-info-p">Personal Info</p>
-        <p>Please provide your name, email adress and phone number.</p>
-
-      <div>
-        <div>
-      <p>Name</p>
-      <input type="text" id="username" placeholder="User name..">
-      <button id="submit-btn-username">Submit</button>
-      <div class="error" id="name-error"></div>
-      </div>
-      <div>
-      <p>Email-adress</p>
-      <input type="text" id="email" placeholder="Email..">
-      <button id="submit-btn-email" >Submit</button>
-      <div class="error" id="email-error"></div>
-      </div>
-      <div>
-      <p>Phone Number</p>
-      <input type="text" id="phone" placeholder="Phone..">
-      <button id="submit-btn-number">Submit</button>
-      <div class="error" id="phone-error"></div>
-      </div>
-      
-      
-      </div>
-      <button id="next-btn active">Next Step</button>
-    </div>
-    
-    
-    <div id="form">
-        <p>Select your plan</p>
-        <p>You have the option of monthly or yearly billing</p>
-       <button>
-        <img src="../images/icon-arcade.svg" alt="">
-        <p id="button-script">Arcade</p>
-        <p>$9/mo</p>
-       </button>
-       <button>
-        <img src="../images/icon-advanced.svg" alt="">
-        <p id="button-script">Advanced</p>
-        <p>$12/mo</p>
-       </button>
-       <button>
-        <img src="../images/icon-pro.svg" alt="">
-        <p id="button-script">Pro</p>
-        <p>$15/mo</p>
-       </button>
-       <div>
-        <button id="back-btn active">Go back</button>
-        <button id="next-btn active" >Next step</button>
-       </div>
-    </div>
-
-
-
-    
-       <div id="form">
-        <div>
-            <p>Pick add-ons</p>
-            <p>Add-ons help enhance your gaming experience.</p>
-        </div>
-        <fieldset>
-        <div id="checkbox-div">
-            <input id="input-checkbox" type="checkbox">
-           <span> Online service</span>
-           <span>Access to multiplayer game</span> <span id="light-text">+1$/mo</span>
-        </div>
-        </fieldset>
-        <br>
-        <fieldset>
-        <div id="checkbox-div">
-            <input id="input-checkbox" type="checkbox">
-               <span> Larger storage</span>
-               <span>Extra 1TB of cloud save</span> <span id="light-text">+2$/mo</span>
-            </div>
-            </fieldset>
-            <br>
-            <fieldset>
-            <div id="checkbox-div">
-                <input id="input-checkbox" type="checkbox">
-                   <span>Customizable profile</span>
-                   <span">Custom theme on your profile</span> <span id="light-text">+2$/mo</span>
-                </div>
-                </fieldset>
-                <br>
-                <button id="back-btn active" >Go Back</button>
-                <button id="next-btn active" >Next Step</button>
-            </div>
-       
-
-
-
-            <div id="form">
-        <p>Double-check everything looks OK before confirming</p>
-        <div id="sum">
-            <p>Arcade(monthly)
-            </p>
-            <a href="">change</a>
-            <span id="month-payment">$9/mo</span>
-            <hr>
-            <p>Online service</p>
-            <span id="month-payment">+1/mo</span>
-            <br>
-            <p>Larger storage</p>
-            <span id="month-payment">+2/mo</span>
-           
-        </div>
-        <div>
-            <button id="back-btn" >Go back</button>
-        <button id="confirm-btn">confirm</button>
-    </div>
+        
         </div>
 
-    <div id="form">
-        <img src="../images/icon-thank-you.svg" alt="">
-        <p>Thank you</p>
-        <p>Thank for confirming you subscription. We hope you have fun using our plattform.
-            If you ever need support please feel free to email us at support@loremgaming.com
-        </p>
-    </div>
-
-    </form>
     </div>
 </body>
 </html>
