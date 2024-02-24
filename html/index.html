@@ -8,10 +8,8 @@
     <title>Multi step form</title>
 </head>
 <body>
-     <div id="container">
-         
-         <div id="displayStep" class="displayStep">
-
+    <div id="container">         
+        <div id="displayStep" class="displayStep">
              <div class="circle">
                      <div class="circle1" id="circle1"><p>1</p></div>
                      <div class="circle2" id="circle2"><P>2</P></div>
@@ -22,30 +20,29 @@
              <div class="steps" id="steps">
                  
                 <div class="step1">
-                     <p>step 1</p>
+                     <p>STEP 1</p>
                      <span>YOUR INFO</span>
                  </div>
                  <div class="step2">
-                     <p>Step 2</p>
+                     <p>STEP 2</p>
                      <span>SELECT PLAN</span>
                  </div>
                  <div class="step3">
-                     <p>Step 3</p>
+                     <p>STEP 3</p>
                      <span>ADD-ONS</span>
                  </div>
                  <div class="step4">
-                     <p>step 4</p>
+                     <p>STEP 4</p>
                      <span>SUMMARY</span>
                  </div>
-                 
-             </div>
-         </div>
 
-         <div class="stepContainer" id="stepContainer">
-             
-             <div class="affischStep">
+             </div>
+        </div>
+
+        <div class="stepContainer" id="stepContainer">
+            <div class="affischStep">
                  
-                 <div class="stepInfo" id="stepInfo">
+                <div class="stepInfo" id="stepInfo">
                      
                      <h1>Personal Info</h1>
                      
@@ -95,89 +92,225 @@
                       </button>
                       </div>
 
-                 </div>
+                </div>
 
                  <!-----select plan--->
 
-                 <div class="stepPlan" id="Steplan">
+                <div class="stepPlan" id="Steplan">
                     
-                    <h1>Select your plan</h1>
-                    <p class="description">
-                        You have the option of monthly or yearly billing
-                    </p>
+                         <h1>Select your plan</h1>
+                         <p class="description">
+                         You have the option of monthly or yearly billing
+                         </p>
                  
 
-                 <div class="selectMonth" id="selectMonth">
+                         <div class="selectMonth" id="selectMonth">
                     
-                    <button 
-                    class="planButton"
-                    id="moisArcade" onclick="getPlanPrice1()">
-                    <img src="../images/icon-arcade.svg" alt="">
+                         <button 
+                         class="planButton"
+                         id="moisArcade" onclick="getPlanPrice1()">
+                         <img src="../images/icon-arcade.svg" alt="">
                     
-                    <p>Arcade</p>
-                    <span class="priceMonth" id="priceMonth" >$9/mo</span>
-                    </button>
+                         <p>Arcade</p>
+                         <span class="priceMonth" id="priceMonth" >$9/mo</span>
+                         </button>
 
-                    <button 
-                    class="planButton"
-                    id="moisAdvanced" onclick="getPlanPrice2()">
-                    <img src="../images/icon-advanced.svg" alt="">
+                         <button 
+                         class="planButton"
+                         id="moisAdvanced" onclick="getPlanPrice2()">
+                         <img src="../images/icon-advanced.svg" alt="">
                     
-                    <p>Advanced</p>
-                    <span class="priceMonth" id="priceMonth" >$12/mo</span>
-                    </button>
+                         <p>Advanced</p>
+                         <span class="priceMonth" id="priceMonth" >$12/mo</span>
+                         </button>
 
-                    <button 
-                    class="planButton"
-                    id="moisAdvanced" onclick="getPlanPrice3()">
-                    <img src="../images/icon-pro.svg" alt="">
+                         <button 
+                         class="planButton"
+                         id="moisAdvanced" onclick="getPlanPrice3()">
+                         <img src="../images/icon-pro.svg" alt="">
                     
-                    <p>Pro</p>
-                    <span class="priceMonth" id="priceMonth" >$15/mo</span>
-                    </button>
+                         <p>Pro</p>
+                         <span class="priceMonth" id="priceMonth" >$15/mo</span>
+                         </button>
 
-                 </div>
+                         </div>
 
-                 <div class="planMonth" id="planYear" >
+                         <div class="planMonth" id="planYear" >
 
-                    <button class="planButton" id="anneeArcade" 
-                    onclick="getPrice4()">
+                         <button class="planButton" id="anneeArcade" 
+                         onclick="getPrice4()">
                         
-                        <img src="../images/icon-arcade.svg" alt="">
-                        <p>Arcade</p>
-                        <span class="planYear">$90/yr</span>
-                        <label class="free">2 months free</label>
+                          <img src="../images/icon-arcade.svg" alt="">
+                         <p>Arcade</p>
+                         <span class="planYear">$90/yr</span>
+                         <label class="free">2 months free</label>
 
-                    </button>
+                         </button>
 
-                    <button class="planButton" id="anneeAdvanced" 
-                    onclick="getPrice5()">
+                         <button class="planButton" id="anneeAdvanced" 
+                         onclick="getPrice5()">
                         
-                        <img src="../images/icon-advanced.svg" alt="">
-                        <p>Advanced</p>
-                        <span class="planYear">$120/yr</span>
-                        <label class="free">2 months free</label>
+                         <img src="../images/icon-advanced.svg" alt="">
+                         <p>Advanced</p>
+                         <span class="planYear">$120/yr</span>
+                         <label class="free">2 months free</label>
 
-                    </button>
+                         </button>
 
-                    <button class="planButton" id="anneePro" 
-                    onclick="getPrice6()">
+                         <button class="planButton" id="anneePro" 
+                         onclick="getPrice6()">
                         
-                        <img src="../images/icon-pro.svg" alt="">
-                        <p>Pro</p>
-                        <span class="planYear">$150/year</span>
-                        <label class="free">2 months free</label>
+                         <img src="../images/icon-pro.svg" alt="">
+                         <p>Pro</p>
+                         <span class="planYear">$150/year</span>
+                         <label class="free">2 months free</label>
 
-                    </button>
+                         </button>
 
-                 </div>
+                         </div>
 
-                 </div>
+                         <div class="switch">
 
-             </div>
-        
+                         <p class="monthly">Monthly</p>
+                         <label for="" class="check">
+                         <input 
+                         type="checkBox"
+                         name=""
+                         class="switch"
+                         id="checkBox"
+                         onclick="reset()">
+                         <span></span>
+                         </label>
+                         <p class="yearly">Yearly</p>
+
+                         </div>
+
+                         <div class="buttonContainerStepTwo">
+                         <button onclick="gobackToStepOne()" id="" class="goBack">Go back</button>
+                         <button onclick="goToStepThree()" class="nextStep">Next</button>
+                         </div>
+
+                </div>
+
+                 <!-------Add on-->
+
+                <div class="stepAddOn" id="stepAddOn">
+
+                     <h1>Pick add-ons</h1>
+                     <p class="description" id="description">
+                        Add-ons help enhance your gaming experience
+                     </p>
+
+                        <div id="addOnMois">
+
+                            
+                            
+                            <div class="addOnBtn">
+                                 <div class="regroup">
+                                 <input 
+                                 type="checkbox" id="onlineMois" value="1" >
+                                     <div class="addOn">
+                                     <p class="addSize">Online Service</p>
+                                     <span>Access to multiplayer games</span>
+                                     </div>
+                                 </div>
+                                 <p class="prix">$2/mo</p>
+                            </div>
+                         
+                     
+                    
+                            <div class="addOnBtn">
+                                <div class="regroup">
+                                 <input 
+                                 type="checkbox" id="StorageMois" value="2" >
+                                    <div class="addOn">
+                                     <p class="addSize">Larger storage</p>
+                                     <span>Extra 1TB of cloud save</span>
+                                    </div>
+                                </div>
+                             <p class="prix">$2/mo</p>
+                            </div>
+                     
+
+                    
+                            <div class="addOnBtn">
+                                <div class="regroup">
+                                 <input 
+                                 type="checkbox" id="customMois" value="3" >
+                                     <div class="addOn">
+                                     <p class="addSize">Customizable profile</p>
+                                     <span > Custom theme on your profile</span>
+                                     </div>
+                                </div>
+                             <p class="prix">$2/mo</p>
+                            </div>
+
+                        </div>
+
+                        <!---Year buttons-->
+
+                        <div id="addOnAnnee">
+
+                
+                            
+                            <div class="addOnBtn">
+                                 <div class="regroup">
+                                 <input 
+                                 type="checkbox" id="onlineAnne" value="10" >
+                                     <div class="addOn">
+                                     <p class="addSize">Online Service</p>
+                                     <span>Access to multiplayer games</span>
+                                     </div>
+                                 </div>
+                                 <p class="prix">$10/yr</p>
+                            </div>
+                         
+                    
+                            <div class="addOnBtn">
+                                <div class="regroup">
+                                 <input 
+                                 type="checkbox" id="StorageAnne" value="20" >
+                                    <div class="addOn">
+                                     <p class="addSize">Larger storage</p>
+                                     <span>Extra 1TB of cloud save</span>
+                                    </div>
+                                </div>
+                             <p class="prix">$20/yr</p>
+                            </div>
+                     
+                    
+                            <div class="addOnBtn">
+                                <div class="regroup">
+                                 <input 
+                                 type="checkbox" id="customAnne" value="20" >
+                                     <div class="addOn">
+                                     <p class="addSize">Customizable profile</p>
+                                     <span > Custom theme on your profile</span>
+                                     </div>
+                                </div>
+                             <p class="prix">$20/yr</p>
+                            </div>
+
+                        </div>
+
+                        <div class="buttonContainerStepThree">
+                            <button onclick="gobackToStepTwo()" id="" class="goBack">Go back</button>
+                            <button onclick="goToStepFour()" class="nextStep">Next</button>
+                        </div>
+                    
+                </div>
+
+                <!---Summary-->
+
+                <div class="stepSummary" id="stepSummary">
+                    <h1>Finishing up</h1>
+                    <p class="description" id="description">
+                    Double-check everything is OK before confirming
+                    </p>
+                </div>
+
+            </div>
         </div>
-
-    </div>
+    </div> 
 </body>
 </html>
