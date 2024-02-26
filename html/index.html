@@ -303,11 +303,73 @@
                 <!---Summary-->
 
                 <div class="stepSummary" id="stepSummary">
-                    <h1>Finishing up</h1>
-                    <p class="description" id="description">
-                    Double-check everything is OK before confirming
-                    </p>
+                 
+                 <h1>Finishing up</h1>
+                 <p class="description" id="description">
+                 Double-check everything is OK before confirming
+                 </p>
+
+                    <div class="resume">
+
+                        <div class="resumeContainer">
+
+                            <div id="resumeMonth" >
+
+                                <div class="flexResume">
+
+                                    <div>
+                                        <h4 id="modeResume">Choose a plan</h4>
+                                        <button onclick="goFromFourToTwo()">change</button>
+                                    </div>
+                                    <label for="" id="priceResume"></label>
+                                </div>
+                                <br/>
+                                <span></span>
+                                <div class="flexResume">
+                                    <p>Online service</p>
+                                    <label for="" id="onlinePrice">+0$</label>
+                                </div>
+                                <div class="flexResume">
+                                    <p>Larger storage</p>
+                                    <label for="" id="storagePrice">+0$</label>
+                                </div>
+                                <div class="flexResume">
+                                    <p>Customizable profile</p>
+                                    <label for="" id="costumizablePrice">+0$</label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="flexTotal">
+                            <p id="modeTotal">Total</p>
+                            <span id="totalPrice"></span>
+                            <span class="dollar">$</span>
+                        </div>
+
+                        <div class="buttonContainerStepFour">
+                            <button onclick="gobackToStepThree()" id="" class="goBack">Go back</button>
+                            <button onclick="goToStepThankYou()" class="nextStep">Confirm</button>
+                        </div>
+
+                    </div>
+                
                 </div>
+
+                 <!---Thank you-->
+
+                 <div class="stepThankYou" id="stepThankYou">
+                    <img src="../images/icon-thank-you.svg" alt="">
+                    <h1>Thank you!</h1>
+                    <p>
+                         Thanks for confirming your subscription. We hope you have
+                         <br>
+                         fun using our platform. If you ever need support, please feel 
+                         <br>
+                         free to email us at support@loremgaming.com
+
+                    </p>
+                 </div>
 
             </div>
         </div>

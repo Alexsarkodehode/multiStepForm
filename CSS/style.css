@@ -1,9 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    outline: none;
-    box-sizing: border-box;
-}
+
 @font-face{
     font-family: titleFont;
     src:url("../fonts/Ubuntu-Bold.ttf")
@@ -19,14 +14,6 @@
     src:url("../fonts/Ubuntu-Regular.ttf")
 }
 
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: -webkit-linear-gradient(#fff)
-    
-}
 
 #wrapper{
     width: 600px;
