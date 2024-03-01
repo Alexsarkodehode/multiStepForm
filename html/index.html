@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/style2.css">
     <script defer src="../js/script.js"></script>
     <title>Multi step form</title>
 </head>
@@ -55,7 +56,6 @@
                          <p>Name</p>
                          <span id="errorName"></span>
                      </div>  
-                      
                       <input 
                       type="text" 
                       name="name" 
@@ -67,7 +67,6 @@
                         <p>Email adress</p>
                         <span id="errorEmail"></span>
                       </div> 
-
                       <input 
                       type="text" 
                       name="email" 
@@ -79,7 +78,6 @@
                         <p>Phone Number</p>
                         <span id="errorPhoneNumber"></span>
                       </div>
-
                       <input 
                       type="text"
                       name="phone"
@@ -87,7 +85,7 @@
                       placeholder="e.g. +1234567890">
 
                       <div class="buttonContainerStepOne">
-                        <button onclick="goStepTwo()" class="nextStep">
+                        <button onclick="goToStepTwo()" class="nextStep">
                         Next Step
                       </button>
                       </div>
@@ -174,8 +172,7 @@
                          <p class="monthly">Monthly</p>
                          <label for="" class="check">
                          <input 
-                         type="checkBox"
-                         name=""
+                         type="checkBox" 
                          class="switch"
                          id="checkBox"
                          onclick="reset()">
@@ -186,7 +183,7 @@
                          </div>
 
                          <div class="buttonContainerStepTwo">
-                         <button onclick="gobackToStepOne()" id="" class="goBack">Go back</button>
+                         <button onclick="gobackToStepOne()" id="goBack" class="goBack">Go back</button>
                          <button onclick="goToStepThree()" class="nextStep">Next</button>
                          </div>
 
@@ -214,7 +211,7 @@
                                      <span>Access to multiplayer games</span>
                                      </div>
                                  </div>
-                                 <p class="prix">$2/mo</p>
+                                 <p class="prix">$1/mo</p>
                             </div>
                          
                      
@@ -249,7 +246,7 @@
 
                         <!---Year buttons-->
 
-                        <div id="addOnAnnee">
+                        <div id="addOnAnne">
 
                 
                             
@@ -311,7 +308,7 @@
 
                     <div class="resume">
 
-                        <div class="resumeContainer">
+                        <div class="resumeContainer" id="resumeContainer">
 
                             <div id="resumeMonth" >
 
