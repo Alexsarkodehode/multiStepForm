@@ -53,25 +53,27 @@ function checkPhoneNumber(){
 
 function checkMail() {
     //id tag for for input field for email
-    let myInputEmail = document.getElementById("infoEmail");
+    let myInputMail = document.getElementById("infoEmail");
     //the span id error message
-    let errorEmail = document.getElementById("errorEmail");
+    let errorMail = document.getElementById("errorEmail");
     //the regex test for email
     let myRegexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
     //the input field is a trimmed string
-    if(myInputEmail.value.trim() == ""){
+    if(myInputMail.value.trim() == ""){
         //return this error message 
-        errorEmail.innerHTML = "This field is required";
+        errorMail.innerHTML = "This field is required";
         //if the value the user puts in fails the regex test
     } else if(myRegexEmail.test(myInputEmail.value) == false){
         //return this error message
-        errorEmail.innerHTML = "Enter valid email";
+        errorMail.innerHTML = "Enter valid email";
+    }
         else{ 
-            errorEmail.innerHTML = "";
+            errorMail.innerHTML = "";
         }
     }
-}
+
+    functio
 
 
 
