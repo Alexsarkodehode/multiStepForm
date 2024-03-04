@@ -11,11 +11,11 @@
 <body>
     <div class="container" id="container">         
         <div id="displayStep" class="displayStep">
-             <div class="circle">
-                     <div class="circle1" id="circle1"><p>1</p></div>
-                     <div class="circle2" id="circle2"><P>2</P></div>
-                     <div class="circle3" id="circle3"><p>3</p></div>
-                     <div class="circle4" id="circle4"><p>4</p></div>
+             <div class="ring">
+                     <div class="ring1" id="ring1"><p>1</p></div>
+                     <div class="ring2" id="ring2"><P>2</P></div>
+                     <div class="ring3" id="ring3"><p>3</p></div>
+                     <div class="ring4" id="ring4"><p>4</p></div>
              </div>
 
              <div class="steps" id="steps">
@@ -106,7 +106,7 @@
                     
                          <button 
                          class="planButton"
-                         id="moisArcade" onclick="getPlanPrice1()">
+                         id="monthArcade" onclick="getPlanPrice1()">
                          <img src="../images/icon-arcade.svg" alt="">
                     
                          <p>Arcade</p>
@@ -115,7 +115,7 @@
 
                          <button 
                          class="planButton"
-                         id="moisAdvanced" onclick="getPlanPrice2()">
+                         id="monthAdvanced" onclick="getPlanPrice2()">
                          <img src="../images/icon-advanced.svg" alt="">
                     
                          <p>Advanced</p>
@@ -124,7 +124,7 @@
 
                          <button 
                          class="planButton"
-                         id="moisAdvanced" onclick="getPlanPrice3()">
+                         id="monthAdvanced" onclick="getPlanPrice3()">
                          <img src="../images/icon-pro.svg" alt="">
                     
                          <p>Pro</p>
@@ -135,7 +135,7 @@
 
                          <div class="planMonth" id="planYear" >
 
-                         <button class="planButton" id="anneeArcade" 
+                         <button class="planButton" id="yearArcade" 
                          onclick="getPrice4()">
                         
                           <img src="../images/icon-arcade.svg" alt="">
@@ -145,7 +145,7 @@
 
                          </button>
 
-                         <button class="planButton" id="anneeAdvanced" 
+                         <button class="planButton" id="yearAdvanced" 
                          onclick="getPrice5()">
                         
                          <img src="../images/icon-advanced.svg" alt="">
@@ -155,7 +155,7 @@
 
                          </button>
 
-                         <button class="planButton" id="anneePro" 
+                         <button class="planButton" id="yearPro" 
                          onclick="getPrice6()">
                         
                          <img src="../images/icon-pro.svg" alt="">
@@ -198,14 +198,14 @@
                         Add-ons help enhance your gaming experience
                      </p>
 
-                        <div id="addOnMois">
+                        <div id="addOnMonth">
 
                             
                             
                             <div class="addOnBtn">
                                  <div class="regroup">
                                  <input 
-                                 type="checkbox" id="onlineMois" value="1" >
+                                 type="checkbox" id="onlineMonth" value="1" >
                                      <div class="addOn">
                                      <p class="addSize">Online Service</p>
                                      <span>Access to multiplayer games</span>
@@ -219,7 +219,7 @@
                             <div class="addOnBtn">
                                 <div class="regroup">
                                  <input 
-                                 type="checkbox" id="StorageMois" value="2" >
+                                 type="checkbox" id="StorageMonth" value="2" >
                                     <div class="addOn">
                                      <p class="addSize">Larger storage</p>
                                      <span>Extra 1TB of cloud save</span>
@@ -233,7 +233,7 @@
                             <div class="addOnBtn">
                                 <div class="regroup">
                                  <input 
-                                 type="checkbox" id="customMois" value="3" >
+                                 type="checkbox" id="customMonth" value="3" >
                                      <div class="addOn">
                                      <p class="addSize">Customizable profile</p>
                                      <span > Custom theme on your profile</span>
@@ -246,14 +246,14 @@
 
                         <!---Year buttons-->
 
-                        <div id="addOnAnne">
+                        <div id="addOnYear">
 
                 
                             
                             <div class="addOnBtn">
                                  <div class="regroup">
                                  <input 
-                                 type="checkbox" id="onlineAnne" value="10" >
+                                 type="checkbox" id="onlineYear" value="10" >
                                      <div class="addOn">
                                      <p class="addSize">Online Service</p>
                                      <span>Access to multiplayer games</span>
@@ -266,7 +266,7 @@
                             <div class="addOnBtn">
                                 <div class="regroup">
                                  <input 
-                                 type="checkbox" id="StorageAnne" value="20" >
+                                 type="checkbox" id="StorageYear" value="20" >
                                     <div class="addOn">
                                      <p class="addSize">Larger storage</p>
                                      <span>Extra 1TB of cloud save</span>
@@ -279,7 +279,7 @@
                             <div class="addOnBtn">
                                 <div class="regroup">
                                  <input 
-                                 type="checkbox" id="customAnne" value="20" >
+                                 type="checkbox" id="customYear" value="20" >
                                      <div class="addOn">
                                      <p class="addSize">Customizable profile</p>
                                      <span > Custom theme on your profile</span>
@@ -346,7 +346,7 @@
 
                         <div class="buttonContainerStepFour">
                             <button onclick="gobackToStepThree()" class="goBack">Go back</button>
-                            <button onclick="goToStepThankYou()" class="nextStep">Confirm</button>
+                            <button onclick="goToStepConfirm()" class="nextStep">Confirm</button>
                         </div>
 
                     </div>
@@ -355,7 +355,7 @@
 
                  <!---Thank you-->
 
-                 <div class="stepThankYou" id="stepThankYou">
+                 <div class="stepConfirm" id="stepConfirm">
                     <img src="../images/icon-thank-you.svg" alt="">
                     <h1>Thank you!</h1>
                     <p>

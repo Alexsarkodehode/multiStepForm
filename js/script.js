@@ -5,6 +5,126 @@ function goToStepTwo(){
     Achieve()
 }
 
+function goBackToStepOne() {
+    stepInfo.style.display = "flex";
+    stepPlan.style.display = "none";
+    ring1.style.color = "black";
+    ring1.style.backgroundColor = "rgba(255, 255, 255)";
+    ring2.style.backgroundColor = "rgb(255, 255, 255, 0)";
+    ring2.style.color = "white";
+  }
+
+function goToStepThree() {
+    console.log(typeof document.getElementById("totalPrice").innerHTML);
+  
+    if (document.getElementById("totalPrice").innerHTML == "") {
+      console.log(document.getElementById("totalPrice").innerHTML);
+      document.getElementById("totalPrice").innerHTML = "0";
+      console.log(document.getElementById("totalPrice").innerHTML);
+    }
+    checkPlan();
+  }
+
+function goBackToSteptTwo() {
+    stepPlan.style.display = "flex";
+    stepAddOn.style.display = "none";
+    ring2.style.color = "black";
+    ring2.style.backgroundColor = "rgba(255, 255, 255)";
+    ring3.style.backgroundColor = "rgb(255, 255, 255, 0)";
+    ring3.style.color = "white";
+  }
+  
+  function goToStepFour() {
+    stepSummary.style.display = "flex";
+    stepAddOn.style.display = "none";
+    ring3.style.color = "white";
+    ring3.style.backgroundColor = "rgba(255, 255, 255, 0)";
+    ring4.style.backgroundColor = "rgb(255, 255, 255)";
+    ring4.style.color = "black";
+  
+    const addOnPrice = document.getElementsByName("adOnn").forEach(radio => {
+      if (radio.checked) {
+        console.log(radio.value);
+        console.log(document.getElementById("totalPrice").innerHTML);
+        const planPrice = document.getElementById("totalPrice").innerHTML;
+        console.log(planPrice);
+        document.getElementById("totalPrice").innerHTML =
+          parseInt(planPrice) + parseInt(radio.value);
+      }
+    });
+  }
+
+function goBackToStepThree() {
+    stepSummary.style.display = "none";
+    stepAddOn.style.display = "flex";
+    ring3.style.color = "black";
+    ring3.style.backgroundColor = "rgba(255, 255, 255)";
+    ring4.style.backgroundColor = "rgb(255, 255, 255, 0)";
+    ring4.style.color = "white";
+  
+    const addOnPrice = document.getElementsByName("adOnn").forEach(radio => {
+      if (radio.checked) {
+        console.log(radio.value);
+        console.log(document.getElementById("totalPrice").innerHTML);
+        const planPrice = document.getElementById("totalPrice").innerHTML;
+        console.log(planPrice);
+        document.getElementById("totalPrice").innerHTML =
+          parseInt(planPrice) - parseInt(radio.value);
+      }
+    });
+  }
+
+function goFromFourToTwo() {
+    stepSummary.style.display = "none";
+    stepPlan.style.display = "flex";
+    ring2.style.color = "black";
+    ring2.style.backgroundColor = "rgba(255, 255, 255)";
+    ring4.style.backgroundColor = "rgb(255, 255, 255, 0)";
+    ring4.style.color = "white";
+  
+    const addOnPrice = document.getElementsByName("addOn").forEach(radio => {
+      if (radio.checked) {
+        console.log(radio.value);
+        console.log(document.getElementById("totalPrice").innerHTML);
+        const planPrice = document.getElementById("totalPrice").innerHTML;
+        console.log(planPrice);
+        document.getElementById("totalPrice").innerHTML =
+          parseInt(planPrice) - parseInt(radio.value);
+      }
+    });
+  }
+
+//function for the confirm step
+
+function goToStepConfirm() {
+    console.log(document.getElementById("modeResume").innerHTML);
+    if (document.getElementById("modeResume").innerHTML == "Choose a plan") {
+      stepSummary.style.display = "flex";
+      StepConfirm.style.display = "none";
+    } else {
+      stepSummary.style.display = "none";
+      StepConfirm.style.display = "flex";
+    }
+  }
+
+/*Function checks that checkbox displays plan for the year */
+
+checkBox = document
+  .getElementById("switch")
+  .addEventListener("click", event => {
+    if (event.target.checked) {
+      planYear.style.display = "flex";
+      planMonth.style.display = "none";
+      addOnYear.style.display = "flex";
+      addOnMonth.style.display = "none";
+    } else {
+      planYear.style.display = "none";
+      planMonth.style.display = "flex";
+      addOnYear.style.display = "none";
+      addOnMonth.style.display = "flex";
+    }
+  });
+
 //functions to change the plan buttons and get the info
 
 checkBox = document
@@ -352,10 +472,10 @@ function checkMail() {
 
             stepInfo.style.display = "none";
             stepPlan.style.display = "flex";
-            circle1.style.color = "white";
-            circle1.style.backgroundColor = "rgba(255, 255, 255, 0)";
-            circle2.style.backgroundColor = "rgb(255, 255, 255)";
-            circle2.style.color = "black";
+            ring1.style.color = "white";
+            ring1.style.backgroundColor = "rgba(255, 255, 255, 0)";
+            ring2.style.backgroundColor = "rgb(255, 255, 255)";
+            ring2.style.color = "black";
 
         }
 

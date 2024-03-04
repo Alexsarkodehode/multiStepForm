@@ -45,7 +45,7 @@ button{
     background-image: url("../images/bg-sidebar-desktop.svg");
 }
 
-.circle{
+.ring{
     position: relative;
     background-color: rgba(220, 20, 60, 0);
     width: 20%;
@@ -59,12 +59,12 @@ button{
     align-items: center;
 }
 
-.circle p{
+.ring p{
     margin-top: 10px;
 
 }
 
-.circle1{
+.ring1{
 width: 40px;
 height: 40px;
 border-radius: 20px;
@@ -75,7 +75,7 @@ justify-content: center;
 color: white;
 }
 
-.circle2{
+.ring2{
     width: 40px;
     height: 40px;
     border-radius: 20px;
@@ -86,7 +86,7 @@ color: white;
     color: white;
 }
 
-.circle3{
+.ring3{
     width: 40px;
     height: 40px;
     border-radius: 20px;
@@ -97,7 +97,7 @@ color: white;
     color: white;
 }
 
-.circle4{
+.ring4{
     width: 40px;
     height: 40px;
     border-radius: 20px;
@@ -188,14 +188,14 @@ color: white;
     flex-direction: column;
 }
 
-#stepThankYou{
+#StepConfirm{
     display: none;
     flex-direction: column;
     align-items: center;
     margin-top: 150px;
 }
 
-#stepThankYou img{
+#StepConfirm img{
     width: 80px;
 }
 
@@ -399,12 +399,12 @@ background-color: hsl(213,96,18%);
     justify-content: space-between;
 }
 
-#addOnAnne{
+#addOnYear{
     display: none;
     flex-direction: column;
 }
 
-#addOnMois{
+#addOnMonth{
     flex-direction: column;
 }
 
