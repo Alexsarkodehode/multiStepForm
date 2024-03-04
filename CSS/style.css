@@ -188,14 +188,14 @@ color: white;
     flex-direction: column;
 }
 
-#StepConfirm{
+#stepConfirm{
     display: none;
     flex-direction: column;
     align-items: center;
     margin-top: 150px;
 }
 
-#StepConfirm img{
+#stepConfirm img{
     width: 80px;
 }
 

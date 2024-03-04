@@ -1,9 +1,12 @@
 function goToStepTwo(){
     checkName()
-    checkPhoneNumber()
     checkMail()
-    Achieve()
+    checkNum()
+    
+    myInputs()
 }
+
+
 
 function goBackToStepOne() {
     stepInfo.style.display = "flex";
@@ -42,7 +45,7 @@ function goBackToSteptTwo() {
     ring4.style.backgroundColor = "rgb(255, 255, 255)";
     ring4.style.color = "black";
   
-    const addOnPrice = document.getElementsByName("adOnn").forEach(radio => {
+    const addOnPrice = document.getElementsByName("addOnPrice").forEach(radio => {
       if (radio.checked) {
         console.log(radio.value);
         console.log(document.getElementById("totalPrice").innerHTML);
@@ -62,7 +65,7 @@ function goBackToStepThree() {
     ring4.style.backgroundColor = "rgb(255, 255, 255, 0)";
     ring4.style.color = "white";
   
-    const addOnPrice = document.getElementsByName("adOnn").forEach(radio => {
+    const addOnPrice = document.getElementsByName("addOnPrice").forEach(radio => {
       if (radio.checked) {
         console.log(radio.value);
         console.log(document.getElementById("totalPrice").innerHTML);
@@ -82,7 +85,7 @@ function goFromFourToTwo() {
     ring4.style.backgroundColor = "rgb(255, 255, 255, 0)";
     ring4.style.color = "white";
   
-    const addOnPrice = document.getElementsByName("addOn").forEach(radio => {
+    const addOnPrice = document.getElementsByName("addOnPrice").forEach(radio => {
       if (radio.checked) {
         console.log(radio.value);
         console.log(document.getElementById("totalPrice").innerHTML);
@@ -409,32 +412,12 @@ function checkName(){
     }
 }
 
-function checkPhoneNumber(){
-    //id tag for for input field for phone number
-    let myInputNum = document.getElementById("infoPhoneNumber")
-    //the span id
-    let myErrorNum = document.getElementById("errorPhoneNumber")
-    //The number boundaries that the user can't cross
-    let myRegexNum = /^[0-9\s]+$/;
 
-    //if the value is a string after it's trimmed
-    if(myInputNum.value.trim()==""){
-        //display this string
-        myErrorNum.innerHTML = "This field is required";
-        //if the value the user puts in fails the regex test
-    } else if(myRegexNum.test(myInputNum.value) == false){
-        //display this string
-        myErrorNum.innerHTML = "Enter number values"
-    } else if(myInputNum.value.trim().length !== 10){
-        myErrorNum.innerHTML = "Enter valid phone number"
-    } else {
-        myErrorNum.innerHTML = "";
-    }
-}
+
 
 function checkMail() {
     //id tag for for input field for email
-    let myInputMail = document.getElementById("infoEmail");
+    let myInputMail = document.getElementById("infoMail");
     //the span id error message
     let errorMail = document.getElementById("errorEmail");
     //the regex test for email
@@ -445,7 +428,7 @@ function checkMail() {
         //return this error message 
         errorMail.innerHTML = "This field is required";
         //if the value the user puts in fails the regex test
-    } else if(myRegexMail.test(myInputEmail.value) == false){
+    } else if(myRegexMail.test(myInputMail.value) == false){
         //return this error message
         errorMail.innerHTML = "Enter valid email";
     }
@@ -454,32 +437,50 @@ function checkMail() {
         }
     }
 
-    function Achieve(){
+    function checkNum() {
         let myInputNum = document.getElementById("infoPhoneNumber");
-        let myInputMail = document.createElement("infoMail");
-        let myInputName = document.getElementById("infoName");
-
-        let myRegexName = /^[a-zA-Z-\s]+$/;
+        let myErrorNum = document.getElementById("errorPhoneNumber");
         let myRegexNum = /^[0-9\s]+$/;
-        let myRegexMail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-
-        if(myInputNum.value.trim().length === 10 &&
-           myRegexNum.test(myInputNum.value)== true &&
-           myInputMail.value.trim().length !== 0 &&
-           myRegexMail.test(myInputMail.value)== true &&
-           myInputName.value.trim().length !== 0 &&
-           myRegexName.test(myInputName.value) === true){
-
-            stepInfo.style.display = "none";
-            stepPlan.style.display = "flex";
-            ring1.style.color = "white";
-            ring1.style.backgroundColor = "rgba(255, 255, 255, 0)";
-            ring2.style.backgroundColor = "rgb(255, 255, 255)";
-            ring2.style.color = "black";
-
+      
+        if (myInputNum.value.trim() == "") {
+          myErrorNum.innerHTML = "This field is required";
+        } else if (myRegexNum.test(myInputNum.value) == false) {
+          myErrorNum.innerHTML = "Must contain number";
+        } else if (myInputNum.value.trim().length !== 10) {
+          myErrorNum.innerHTML = "Invalid Phone Number";
+        } else {
+          myErrorNum.innerHTML = "";
         }
+      }
+
+      
+function myInputs(){
+    let myInputNum = document.getElementById("infoPhoneNumber");
+    let myInputMail = document.createElement("infoMail");
+    let myInputName = document.getElementById("infoName");
+
+    let myRegexName = /^[a-zA-Z-\s]+$/;
+    let myRegexNum = /^[0-9\s]+$/;
+    let myRegexMail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+    if(myInputNum.value.trim().length === 10 &&
+       myRegexNum.test(myInputNum.value)== true &&
+       myInputMail.value.trim().length !== 0 &&
+       myRegexMail.test(myInputMail.value)== true &&
+       myInputName.value.trim().length !== 0 &&
+       myRegexName.test(myInputName.value) === true){
+
+        stepInfo.style.display = "none";
+        stepPlan.style.display = "flex";
+        ring1.style.color = "white";
+        ring1.style.backgroundColor = "rgba(255, 255, 255, 0)";
+        ring2.style.backgroundColor = "rgb(255, 255, 255)";
+        ring2.style.color = "black";
 
     }
+
+}
+
 
     function checkPlan() {
         if (document.getElementById("modeResume").innerHTML == "Choose a plan") {
